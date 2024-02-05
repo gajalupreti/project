@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+
+  <!-- Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    :root {
+      --primary-color: #e5e5e5;
+      --secondary-color: #000000;
+
+    }
+
+    .dark-theme {
+      --primary-color: #000000;
+      --secondary-color: #e5e5e5;
+    }
+
+    body {
+      background-color: var(--primary-color);
+    }
+
+    .carousel-item img {
+      margin: auto;
+      padding: 20px;
+      height: 600px;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      height: 75px;
+    }
+
+
+    footer {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+      border-top: 1px solid var(--primary-color);
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .abc {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nepal {
+      font-family: Copperplate, Papyrus, fantasy;
+      text-decoration: underline;
+    }
+
+    #icon {
+      width: 30px;
+      cursor: pointer;
+    }
+  </style>
+
+  <title>Library Management System</title>
+
+</head>
+
+<body>
+  <div id="typing-container">
+    <nav class="navbar navbar-expand-lg "><!-- navbar -->
+      <a class="navbar-brand" href="#" style="color: var(--primary-color);">G.K.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: var(--primary-color);">Home <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin_login.php" style="color: var(--primary-color);">Admin Panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="color: var(--primary-color);">Contact Us</a>
+          </li>
+        </ul>
+        <a class="navbar-brand mx-auto nepal" href="#" style="color: var(--primary-color);">
+          <<< THE-JAYA-NEPAL-LIBRARY>>>
+        </a>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger" style="margin: 5px; color: black;" href="user_login.php">User Login</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger" style="margin: 5px; color: black;" href="user_signup.php">User Signup</a>
+          </li>
+        </ul>
+      </div>
+      <img src="moon.png" alt="" id="icon">
+
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel"> <!-- carousel -->
+
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="lib1.jpg" class="d-block w-100" alt="Welcome Image">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Our Library</h2>
+            <p>Explore a world of knowledge and imagination. Join us on a literary journey!</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="lib2.jpg" class="d-block w-100" alt="Featured Book Image">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Featured Book of the Month</h2>
+            <p>Discover our carefully selected featured book. Immerse yourself in its captivating story.</p>
+            <button class="btn btn-primary">Explore Featured Book</button>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="lib3.jpg" class="d-block w-100" alt="New Releases Image">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Explore New Releases</h2>
+            <p>Check out the latest additions to our library. Find new stories to indulge in.</p>
+            <button class="btn btn-primary">Browse New Releases</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container my-4"><!-- Books box -->
+      <div class="row mb-2">
+
+        <div class="col-md-12">
+          <div class="row mb-2">
+            <!-- Religious -->
+            <div class="col-md-6">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-warning">Religious</strong>
+                  <h3 class="mb-0">Sacred Scriptures</h3>
+                  <div class="mb-1 text-muted">Available Copies: 10</div>
+                  <p class="mb-auto">Explore sacred texts and religious literature from various traditions.</p>
+                  <a href="#" class="stretched-link">Borrow Now</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250" src="religion.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Science -->
+            <div class="col-md-6">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-info">Science</strong>
+                  <h3 class="mb-0">Scientific Discoveries</h3>
+                  <div class="mb-1 text-muted">Available Copies: 12</div>
+                  <p class="mb-auto">Delve into the fascinating world of scientific exploration and discoveries.</p>
+                  <a href="#" class="stretched-link">Borrow Now</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250" src="science.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- History and Comic -->
+        <div class="col-md-12">
+          <div class="row mb-2">
+            <!-- History -->
+            <div class="col-md-6">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger">History</strong>
+                  <h3 class="mb-0">Historical Chronicles</h3>
+                  <div class="mb-1 text-muted">Available Copies: 18</div>
+                  <p class="mb-auto">Journey through different epochs with our collection of historical chronicles.</p>
+                  <a href="#" class="stretched-link">Borrow Now</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250" src="history.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <!-- Comic -->
+            <div class="col-md-6">
+              <div
+                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-info">Comic</strong>
+                  <h3 class="mb-0">Humorous Adventures</h3>
+                  <div class="mb-1 text-muted">Available Copies: 25</div>
+                  <p class="mb-auto">Laugh and enjoy with our collection of humorous and adventurous comics.</p>
+                  <a href="#" class="stretched-link">Borrow Now</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img class="bd-placeholder-img" width="200" height="250" src="comic.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p class="abc">© 2020-2021 Library, Inc. <a href="#">Privacy</a> · <a href="#"> Terms</a></p>
+  </footer>
+
+  </div>
+
+
+  <script> /*typing animation*/
+    document.addEventListener('DOMContentLoaded', function () {
+      const typingContainer = document.getElementById('typing-container');
+      applyTypingAnimation(typingContainer);
+
+      function applyTypingAnimation(container) {
+        const walker = document.createTreeWalker(
+          container,
+          NodeFilter.SHOW_TEXT,
+          null,
+          false
+        );
+
+        let textNode;
+        while ((textNode = walker.nextNode())) {
+          type(textNode, textNode.textContent, 0);
+        }
+      }
+
+      function type(element, text, index) {
+        if (index < text.length) {
+          element.nodeValue = text.substr(0, index + 1);
+          index++;
+          setTimeout(function () {
+            type(element, text, index);
+          }, 50);
+        }
+      }
+    });
+
+    /* add music
+    <button id="toggleButton">Toggle Music</button>
+<audio id="music" src="Hello.mp3" loop></audio>
+
+    var music = document.getElementById("music");
+    var toggleButton = document.getElementById("toggleButton");
+
+    toggleButton.addEventListener("click", function () {
+      if (music.paused) {
+        music.play();
+        toggleButton.textContent = "Pause Music";
+      } else {
+        music.pause();
+        toggleButton.textContent = "Play Music";
+      }
+    });*/
+
+  </script>
+
+  <script> /*dark theme*/
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.classList.contains("dark-theme")) {
+        icon.src = "sun.png";
+      } else {
+        icon.src = "moon.png";
+      }
+    }
+  </script>
+
+  <!-- Bootstrap JS and Popper.js from CDN -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849aBlz6/yoV5yXn7bBoIkB5PbBoopqDgmI9tP6K9lF/1povSo94+2xkPX" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-EAMqZdGCzExxHMQJ2ZbPOoHzwZzEDwu5hYCFIZtX3UF/cdBCBz2JqdQ8bBOomXZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyVq5FV0aW/ahdjQaY6PSSbNh3Kepp5Gi0"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
